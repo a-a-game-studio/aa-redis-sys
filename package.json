@@ -1,0 +1,30 @@
+{
+  "name": "@a-a-game-studio/aa-redis-sys",
+  "main": "lib/src/index.js",
+  "types": "lib/src/index.d.ts",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "release": "npm run build:dev && npm run build:prod",
+    "build": "tsc",
+    "test": "tsc && node ./lib/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a-a-game-studio/aa-redis-sys.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/a-a-game-studio/aa-redis-sys/issues"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "homepage": "https://github.com/a-a-game-studio/aa-redis-sys#readme",
+  "dependencies": {
+    "@types/node": "^13.11.1",
+    "redis": "^3.0.2",
+    "typescript": "^3.8.3"
+  }
+}
