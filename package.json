@@ -24,7 +24,6 @@
   "homepage": "https://github.com/a-a-game-studio/aa-redis-sys#readme",
   "dependencies": {
     "@types/node": "^13.11.1",
-    "redis": "^3.0.2",
     "typescript": "^3.8.3"
   }
 }

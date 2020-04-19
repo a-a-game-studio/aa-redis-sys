@@ -1,6 +1,5 @@
 import { CacheSys } from "./CacheSys";
 
-var redis = require("redis");
 
 export interface RedisConf {
     url: string;
@@ -16,9 +15,14 @@ export class RedisSys extends CacheSys {
     public redisClient: any;
     protected conf: RedisConf;
 
-    constructor(conf: RedisConf) {
+    /**
+     * 
+     * @param conf 
+     * @param createClient redis.createClient(conf);
+     */
+    constructor(conf: RedisConf, createClient: any) {
         super(conf);
-        this.redisClient = redis.createClient(conf);
+        this.redisClient = createClient;
     }
 
     /**

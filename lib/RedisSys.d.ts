@@ -11,7 +11,12 @@ export interface RedisConf {
 export declare class RedisSys extends CacheSys {
     redisClient: any;
     protected conf: RedisConf;
-    constructor(conf: RedisConf);
+    /**
+     *
+     * @param conf
+     * @param createClient redis.createClient(conf);
+     */
+    constructor(conf: RedisConf, createClient: any);
     /**
      * Получить значение из редиса
      * @param key
