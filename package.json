@@ -2,7 +2,7 @@
   "name": "@a-a-game-studio/aa-redis-sys",
   "main": "lib/src/index.js",
   "types": "lib/src/index.d.ts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "scripts": {
     "release": "npm run build:dev && npm run build:prod",
